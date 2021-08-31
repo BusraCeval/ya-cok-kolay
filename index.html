@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Ya Çok Kolay</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-1">
+      <div class="container">
+        <img src="./images/Group 6.png" alt="" />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Ücretsiz Başvuru</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Bundle</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">İletişim</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">SSS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Become a <span class="text-warning"> Web Developer </span></h1>
+            <p class="lead my-4">
+              We focus on teaching our students the fundamentals of the latest
+              and greatest technologies to prepare them for their first dev role
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="./images/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tanıtım -->
+    <div id="vektor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,32L48,58.7C96,85,192,139,288,181.3C384,224,480,256,576,266.7C672,277,768,267,864,224C960,181,1056,107,1152,69.3C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+    <section id="tanıtım" class="p-1">
+      <div class="container">
+        <div class="row text-center g-3">
+          <div class="col-md">
+            <div class="card1">
+              <div class="card-body text-center">
+                <div class="h1 mb-1">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/11.jpg"
+                    class="rounded-circle mb-1 p-1"
+                    alt=""
+                  />
+                </div>
+                <p></p>
+                <h6 class="card-title mb-1">Onlarca Model</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card1">
+              <div class="card-body text-center">
+                <div class="h1 mb-1">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/11.jpg"
+                    class="rounded-circle mb-1 p-1"
+                    alt=""
+                  />
+                </div>
+                <p></p>
+                <h6 class="card-title mb-1">Ücretsiz Alan Adı</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card1">
+              <div class="card-body text-center">
+                <div class="h1 mb-1">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/11.jpg"
+                    class="rounded-circle mb-1 p-1"
+                    alt=""
+                  />
+                </div>
+                <p></p>
+                <h6 class="card-title mb-1">Sorunsuz Hosting</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="text-dark p-lg-0 pt-lg-4 mb-4 my-5 text-center text-md-start">
+          <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+              
+              <img
+                class="basvuru img-fluid w-40 d-none d-lg-block col-lg-4"
+                src="./images/ücretsiz-basvuru.svg"
+                alt=""
+              />
+              <div>
+                <button class="button1">Ücretsiz Katalogunuza Erişin</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <div class="col-md-12">
+        <div class="col-md-6">
+          <img src="./images/ücretsiz-basvuru.svg" class="basvuru w-40 d-none d-sm-block" alt="">
+        </div>
+        <div class="col-md-6">
+          <button class="button2">Ücretsiz Katalogu İsteyin</button>
+        </div>
+      </div> -->
+    </div>
+    </section>
+
+    <div id="vektor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,64L48,69.3C96,75,192,85,288,101.3C384,117,480,139,576,170.7C672,203,768,245,864,261.3C960,277,1056,267,1152,229.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- Tanıtım -->
+
+    <!-- ya çok kolay paketleri -->
+    <section id="package" class="p-5">
+      <div class="container">
+        <h2 class="text-center">Ya Çok Kolay Paketleri</h2>
+        <p class="paragraph lead text-center mb-5">
+          Sitenizde bulunmasını istediğiniz özellikleri ve iletişim bilgileriniz
+          içeren formu doldurun. Yeni kurumsal web sitenizi istediğiniz pakette
+          çok kolay hazır olsun.
+        </p>
+
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card__side card__side--front-1">
+                <div class="card__title card__title--1">
+                  <i class="fas fa-paper-plane"></i>
+                  <h4 class="card__heading">Basic</h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>1 Website</li>
+                    <li>50 GB SSD Storage</li>
+                    <li>Unmetered Bandwidth</li>
+                    <li>Free SSL Certificate</li>
+                    <li>1 Included Domain</li>
+                    <li>1 Included Domain</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$2.95/mo*</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white product-card__button">Select</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <span>50% off</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card__side card__side--front-1">
+                <div class="card__title card__title--1">
+                  <i class="fas fa-paper-plane"></i>
+                  <h4 class="card__heading">Basic</h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>1 Website</li>
+                    <li>50 GB SSD Storage</li>
+                    <li>Unmetered Bandwidth</li>
+                    <li>Free SSL Certificate</li>
+                    <li>1 Included Domain</li>
+                    <li>1 Included Domain</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$2.95/mo*</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white product-card__button">Select</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <span>50% off</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card__side card__side--front-1">
+                <div class="card__title card__title--1">
+                  <i class="fas fa-paper-plane"></i>
+                  <h4 class="card__heading">Basic</h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>1 Website</li>
+                    <li>50 GB SSD Storage</li>
+                    <li>Unmetered Bandwidth</li>
+                    <li>Free SSL Certificate</li>
+                    <li>1 Included Domain</li>
+                    <li>1 Included Domain</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$2.95/mo*</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white product-card__button">Select</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <span>50% off</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card__side card__side--front-1">
+                <div class="card__title card__title--1">
+                  <i class="fas fa-paper-plane"></i>
+                  <h4 class="card__heading">Basic</h4>
+                </div>
+  
+                <div class="card__details">
+                  <ul>
+                    <li>1 Website</li>
+                    <li>50 GB SSD Storage</li>
+                    <li>Unmetered Bandwidth</li>
+                    <li>Free SSL Certificate</li>
+                    <li>1 Included Domain</li>
+                    <li>1 Included Domain</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$2.95/mo*</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white product-card__button">Select</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__promotion">
+                    <span>50% off</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ya çok kolay paketleri fınısh -->
+
+    <!-- İletişim -->
+    <div id="vektor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,32L48,58.7C96,85,192,139,288,181.3C384,224,480,256,576,266.7C672,277,768,267,864,224C960,181,1056,107,1152,69.3C1248,32,1344,32,1392,32L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+    <section id="iletişim" class="p-1">
+      <div class="container">
+        <div class="row text-center g-3">
+          <h1 class="text-end">Çok Kolay Müşteri Servisi</h1>
+          <h5 class="text-end">
+            Kişisel danışmana ihtiyacınız olduğunda yardımcı olmak için burada.
+          </h5>
+          <p class="text-end">
+            Size özel bireysel destek servisimiz tüm sorularınız için tek
+            iletişim kurmanız için var.
+          </p>
+        </div>
+        <button class="float-end button">İletişim İçin Formu Doldurun</button>
+      </div>
+    </section>
+    <div id="vektor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,64L48,69.3C96,75,192,85,288,101.3C384,117,480,139,576,170.7C672,203,768,245,864,261.3C960,277,1056,267,1152,229.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Form -->
+        <section class="text-dark p-5 p-lg-0 pt-lg-4 mb-4 my-5 text-center text-md-start">
+          <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+              <div>
+                <h1 class="col-md-12" id="form">Size İlham Olacak Onlarca Model Kataloguna Ücretsiz  
+                Erişin.</h1>
+                <p class="lead my-4">Kataloga erişmek için formu doldurun. </p>
+                <button class="button1">Ücretsiz Katalogunuza Erişin</button>
+              </div>
+              <img
+                class="img-fluid w-50 d-none d-md-block col-md-12"
+                src="./images/form.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+    <!-- Form -->
+
+    <!-- Sıkça Sorulan Sorular -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sıkça Sorulan Sorular</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where exactly are you located?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much does it cost to attend?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                Önden ödemem gereken ücret var mı?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Hayır. Tamamen ücretsiz iletişime geçebilirsiniz.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                Hosting için ayrı para talep edilecek mi?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Do you help me find a job?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-light text-dark text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 Ya Çok Kolay</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      });
+    </script>
+  </body>
+</html>
