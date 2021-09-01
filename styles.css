@@ -142,11 +142,11 @@
             perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
+    height: 60rem;
   }
   
   .card__side {
-    height: 52rem;
+    height: 60rem;
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
     position: absolute;
@@ -209,6 +209,7 @@
   .card__title {
     height: 20rem;
     padding: 4rem 2rem 2rem;
+    font-family: "Oswald", sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -237,9 +238,8 @@
   }
   
   .card__heading {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
-    text-transform: uppercase;
     text-align: center;
     color: #fff;
     width: 75%;
@@ -253,6 +253,7 @@
   
   .card__details {
     padding: 0 2rem 2rem;
+    color: #fff;
   }
   
   .card__details ul {
@@ -263,7 +264,7 @@
   
   .card__details ul li {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 13px;
     padding: 1rem;
   }
   
@@ -286,7 +287,16 @@
     color: #fff;
     margin-bottom: 4rem;
   }
-  
+  .card__acıklama{
+    font-size: 10px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+
+  }
+.ek__hizmetler50{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
   .card__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -374,7 +384,7 @@ html, body {
   color: #ffffff;
   width: 10.5rem;
   height: 5.25rem;
-  background: var(--green);
+  background: var(--red);
   border-radius: var(--border-radius-small);
   position: absolute;
   left: -0.20rem;
@@ -406,10 +416,8 @@ html, body {
   border-radius: var(--border-radius-small);
   margin-left: auto;
   font-size: 2rem;
-  text-transform: uppercase;
   background: var(--green);
   color: #ffffff;
-  font-weight: bold;
   transition: background 0.25s cubic-bezier(.29,-0.54,.81,.95);
 }
 
