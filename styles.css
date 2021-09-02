@@ -207,7 +207,7 @@
   }
   
   .card__title {
-    height: 20rem;
+    height: 18rem;
     padding: 4rem 2rem 2rem;
     font-family: "Oswald", sans-serif;
     display: -webkit-box;
@@ -242,7 +242,7 @@
     font-weight: 300;
     text-align: center;
     color: #fff;
-    width: 75%;
+    width: 100%;
   }
   
   .card__heading-span {
