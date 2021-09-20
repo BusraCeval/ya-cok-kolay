@@ -38,12 +38,12 @@ body::before {
 
 .lean {
   font-size: 45px;
-  font-family: 'Chela One', cursive;
-  color:#04c273;
+  font-family: "Chela One", cursive;
+  color: #04c273;
   line-height: 60px;
 }
 
-.website{
+.website {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   color: #222222;
@@ -110,7 +110,7 @@ body::before {
   font-weight: normal;
   font-style: normal;
 }
-.baslık{
+.baslık {
   text-align: center;
   font-size: 70px;
   font-family: "Oswald", sans-serif;
@@ -126,16 +126,16 @@ body::before {
   line-height: 37px;
   font-size: 20px;
 }
-.h1{
+.h1 {
   font-family: "Oswald", sans-serif;
   font-size: 45px;
   color: #04c273;
 }
-.hr{
+.hr {
   color: #fff;
 }
 
-.subtitle{
+.subtitle {
   font-size: 15px;
   font-weight: normal;
   color: #222222;
@@ -159,16 +159,16 @@ body::before {
   line-height: 3rem;
 }
 
-.accordion-button{
+.accordion-button {
   font-size: 16px;
   color: #04a3b5;
   font-weight: bold;
 }
 
-.SSS{
+.SSS {
   font-size: 40px;
   margin: 2rem;
-  font-family: "Oswald", sans-serif; 
+  font-family: "Oswald", sans-serif;
 }
 
 /*Ücretsiz Kataloga Erişin*/
@@ -189,13 +189,13 @@ body::before {
   top: 60px;
 }
 
-.katalog-desc{
+.katalog-desc {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: lighter;
 }
 
-.katalog-title{
+.katalog-title {
   font-family: "Oswald", sans-serif;
   color: #04a3b5;
   text-align: center;
@@ -218,20 +218,19 @@ body::before {
 }
 
 /* Ek Hizmetler */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.list{
+.list {
   position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
 }
 
-.list h2{
+.list h2 {
   position: relative;
   font-weight: 500;
   font-size: 50px;
@@ -250,7 +249,7 @@ body::before {
 }
 
 .list ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -266,7 +265,7 @@ body::before {
   left: 10px;
 }
 
-.list ul li span{
+.list ul li span {
   position: relative;
   padding: 8px;
   display: inline-block;
@@ -274,12 +273,12 @@ body::before {
   transition: 0.5s;
 }
 
-.list ul li:hover span{
+.list ul li:hover span {
   color: #04a3b5;
 }
 
 /*footer*/
-.footer{
+.footer {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
 }
@@ -361,72 +360,74 @@ footer hr {
 /*sürec*/
 .pgb .step {
   text-align: center;
-  position:relative;
-  }
+  position: relative;
+}
 .pgb h2 {
-  font-size:1.3rem;
+  font-size: 1.3rem;
 }
 .pgb .step p {
-  position:absolute;
-  height:60px;
-  width:100%;
-  text-align:center;
-  display:block;
-  z-index:3;
-  color:#fff;
-  font-size:160%;
-  line-height:55px;
-  opacity:.7;
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  z-index: 3;
+  color: #fff;
+  font-size: 160%;
+  line-height: 55px;
+  opacity: 0.7;
 }
 .pgb .active.step p {
-  opacity:1;
-  font-weight:600;
+  opacity: 1;
+  font-weight: 600;
 }
 .pgb .img-circle {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius:50%;
-    background-color:#9E9E9E;
-  border:4px solid #fff;
-  }
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  border: 4px solid #fff;
+}
 .pgb .complete .img-circle {
-    background-color:#4CAF50;
-  }
+  background-color: #4caf50;
+}
 .pgb .active .img-circle {
-    background-color:#FF9800;
-  }
+  background-color: #04a3b5;
+}
 .pgb .step .img-circle:before {
-      content: "";
-      display: block;
-      background: #9E9E9E;
-      height: 4px;
-      width: 50%;
-      position: absolute;
-      bottom: 50%;
-      left: 0;
-      z-index: -1;
-      margin-right:24px;
-  }
+  content: "";
+  display: block;
+  background: #4caf50;
+  height: 4px;
+  width: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  z-index: -1;
+  margin-right: 24px;
+}
 .pgb .step .img-circle:after {
-      content: "";
-      display: block;
-      background: #9E9E9E;
-      height: 4px;
-      width: 50%;
-      position: absolute;
-      bottom: 50%;
-      left: 50%;
-      z-index: -1;
-  }
+  content: "";
+  display: block;
+  background: #9e9e9e;
+  height: 4px;
+  width: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: -1;
+}
 .pgb .step.active .img-circle:after {
-      background: #9E9E9E;
-  }
+  background: #4caf50;
+}
 
-.pgb .step.complete .img-circle:after, .pgb .step.active .img-circle:before {
-      background: #4CAF50;
-  }
+.pgb .step.complete .img-circle:after,
+.pgb .step.active .img-circle:before {
+  background: #4caf50;
+}
 
-  .pgb .step:last-of-type .img-circle:after, .pgb .step:first-of-type .img-circle:before{
-      display: none;
-  }
+.pgb .step:last-of-type .img-circle:after,
+.pgb .step:first-of-type .img-circle:before {
+  display: none;
+}
