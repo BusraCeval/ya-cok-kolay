@@ -188,6 +188,18 @@ body::before {
   left: 356px;
   top: 60px;
 }
+
+.katalog-desc{
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.katalog-title{
+  font-family: "Oswald", sans-serif;
+  color: #04a3b5;
+  text-align: center;
+}
 .button2 {
   border: none;
   border-radius: 10px;
