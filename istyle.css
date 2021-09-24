@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  li {
+    float: right;
+  }
+  .toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #04a3b5;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 50px;
+    display: none;
+  }
+  
+  .map {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 3px;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 25px;
+    margin-top: 54px;
+    color: #04a3b5;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .flex-container {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+  }
+  
+  .container-1 {
+    display: flex;
+  }
+  
+  .container-1 div,
+  .container-2 div,
+  .container-3 div {
+    padding: 40px;
+  }
+  
+  .box-1 {
+    flex: 2;
+    order: 1;
+  }
+  
+  .box-2 {
+    flex: 2;
+    order: 2;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 96.62%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Montserrat", sans-serif;
+    border-color: #4caf50;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4caf50;
+  }
+  
+  .container {
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 15px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .blogContainer {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .blogTitle {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .date {
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .blogContainer {
+    font-size: 40px;
+    padding: 15px;
+  }
+  
+  .postImage {
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+    width: 22%;
+  }
+  
+  p + p {
+    margin-top: 8px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+      width: 96.62%;
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .toggle {
+      display: block;
+    }
+  
+    li {
+      float: none;
+    }
+  
+    ul {
+      width: 100%;
+      display: none;
+    }
+  
+    ul li {
+      display: block;
+      text-align: center;
+    }
+    .active {
+      display: block;
+    }
+  
+    .container-1 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .postImage {
+      float: none;
+      margin: 10px;
+      margin-top: 0px;
+      width: 100%;
+    }
+  
+    .fa {
+      color: #fff;
+      text-align: center;
+    }
+  
+    .socMedia {
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      list-style: none;
+    }
+  
+    a {
+      list-style: none;
+    }
+  }
+  
