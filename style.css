@@ -363,7 +363,11 @@ footer hr {
   position: relative;
 }
 .pgb h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: bolder;
+  color: #04c273;
 }
 .pgb .step p {
   position: absolute;
@@ -430,4 +434,9 @@ footer hr {
 .pgb .step:last-of-type .img-circle:after,
 .pgb .step:first-of-type .img-circle:before {
   display: none;
+}
+.sürec-des{
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
