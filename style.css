@@ -154,11 +154,11 @@ body::before {
 }
 
 .paragraph {
-  color: #555555;
+  color: #3d3d3d;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  font-style: normal;
+  font-size: 20px;
+  line-height: 40px;
+  font-style: bolder;
 }
 
 /*SSS*/
@@ -203,7 +203,7 @@ body::before {
 
 .katalog-desc {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 23px;
   font-weight: lighter;
 }
 
@@ -211,6 +211,8 @@ body::before {
   font-family: "Oswald", sans-serif;
   color: #04a3b5;
   text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
 }
 .button2 {
   border: none;
