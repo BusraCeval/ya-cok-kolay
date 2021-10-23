@@ -36,11 +36,23 @@ body::before {
   font-size: 20px;
 }
 
+.process {
+  font-size: 40px;
+  font-family: "Chela One", cursive;
+  color: #04a3b5;
+}
+
 .lean {
   font-size: 45px;
   font-family: "Chela One", cursive;
   color: #04c273;
   line-height: 60px;
+}
+
+.desc{
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  color: #9e9e9e;
 }
 
 .website {
@@ -435,7 +447,7 @@ footer hr {
 .pgb .step:first-of-type .img-circle:before {
   display: none;
 }
-.sürec-des{
+.sürec-des {
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
