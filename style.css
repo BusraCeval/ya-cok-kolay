@@ -597,3 +597,44 @@ span1:hover{
   box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168)
   }
 }
+
+/*hr*/
+.hr1 {
+  border: 0;
+  clear: both;
+  display: block;
+  margin: 2.4rem auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* -- Animated hr -- */
+
+.progress {
+  background: #04a3b5;
+  height: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress::before {
+  animation-duration: 1.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-name: progress;
+  background: rgb(56, 0, 160);
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 60px;
+}
+
+@keyframes progress {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1440px);
+  }
+}
