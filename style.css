@@ -457,8 +457,6 @@ footer hr {
 }
 
 /*iletişim*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro&display=swap");
-
 * {
   box-sizing: border-box;
 }
@@ -467,14 +465,14 @@ footer hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 100vh;
   font-family: "Montserrat", san-serif;
 }
 
 .card2 {
   position: relative;
-  width: 600px;
-  height: 350px;
+  width: 1000px;
+  height: 450px;
   margin: 16px;
   display: flex;
   justify-content: flex-start;
@@ -488,20 +486,20 @@ footer hr {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 400px;
+  height: 450px;
   transition: 0.5s;
 }
 
 .card2:hover img {
   left: 80%;
-  height: 450px;
+  height: 500px;
 }
 
 .card2 .content {
   position: relative;
   width: 50%;
-  left: 20%;
-  padding: 16px 16px 16px 36px;
+  left: 30%;
+  padding: 16px 26px 26px 36px;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
@@ -513,10 +511,10 @@ footer hr {
   left: 0%;
 }
 
-.card2 .content h2 {
+.card2 .content h1 {
   text-transform: uppercase;
-  font-size: 40px;
-  line-height: 2em;
+  font-size: 30px;
+  line-height: 1.75em;
   font-family: "Oswald", sans-serif;
 }
 
