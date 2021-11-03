@@ -327,13 +327,13 @@ body::before {
 }
 
 .c-1{
-  background: url('./images/clothes.PNG') no-repeat center/cover;
+  background: url('./images/clothes.webp') no-repeat center/cover;
 }
 .c-2{
-  background: url('./images/seo.PNG') no-repeat center/cover;
+  background: url('./images/seo.webp') no-repeat center/cover;
 }
 .c-3{
-  background: url('./images/yummy.PNG') no-repeat center/cover;
+  background: url('./images/yummy.webp') no-repeat center/cover;
 }
 
 .gif-container{
