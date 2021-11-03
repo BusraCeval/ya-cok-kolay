@@ -559,7 +559,7 @@ footer hr {
   box-sizing: border-box;
 }
 
-.de {
+.bedava {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,7 +648,7 @@ footer hr {
   }
 }
 /*button*/
-#neonShadow {
+.neonShadow {
   height: 50px;
   width: 100px;
   border: none;
@@ -658,6 +658,10 @@ footer hr {
   animation: glow 1s infinite;
   transition: 0.5s;
 }
+.neonShadow a{
+text-decoration: none;
+}
+
 span1 {
   display: block;
   width: 100%;
@@ -678,7 +682,7 @@ span1:hover {
   font-weight: 700;
 }
 
-#neonShadow:hover {
+.neonShadow:hover {
   transform: translateX(-20px) rotate(30deg);
   border-radius: 10px;
   background-color: rgba(93, 52, 168, 0.5);
