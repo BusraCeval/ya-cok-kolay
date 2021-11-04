@@ -96,7 +96,6 @@ body::before {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  min-width: 100vh;
 }
 .card1 {
   background: rgba(4, 194, 115, 0.11);
