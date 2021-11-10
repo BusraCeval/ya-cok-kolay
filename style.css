@@ -178,6 +178,10 @@ body::before {
 }
 
 /*tanıtım*/
+.yacokkolay{
+  min-height: 100vh;
+}
+
 #tanıtım {
   background: rgba(4, 194, 115, 0.5);
   font-family: "Montserrat", sans-serif;
@@ -209,12 +213,14 @@ body::before {
   margin: 4px 2px;
   cursor: pointer;
 }
+
 /* ya çok kolay paketleri */
 #package {
   color: #04c273;
   font-family: "Oswald", sans-serif;
   font-weight: normal;
   font-style: normal;
+  min-height: 100vh;
 }
 .baslık {
   text-align: center;
@@ -326,6 +332,10 @@ body::before {
 }
 
 /* Ek Hizmetler */
+.ek{
+  min-height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -458,8 +468,16 @@ body::before {
 object-fit: cover;
 }
 
+.btn{
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  border-inline: 50px;
+}
 
-
+.btn a {
+color: #04a3b5;
+font-size: 15px;
+}
 
 /*footer*/
 .footer {
@@ -636,62 +654,6 @@ footer hr {
   text-shadow: #04c273;
   text-decoration: none;
   color: #04a3b5;
-}
-
-/*button*/
-.neonShadow {
-  height: 50px;
-  width: 100px;
-  border: none;
-  border-radius: 50px;
-  transition: 0.3s;
-  background-color: rgba(156, 161, 160, 0.3);
-  animation: glow 1s infinite;
-  transition: 0.5s;
-}
-.neonShadow a{
-text-decoration: none;
-}
-
-span1 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-weight: 700;
-  padding-top: 10%;
-  padding-right: 2.5%;
-  margin-right: 0px;
-  font-size: 1.5rem;
-  transition: 0.3s;
-  opacity: 0;
-  color: #fff;
-}
-
-span1:hover {
-  transition: 0.3s;
-  opacity: 1;
-  font-weight: 700;
-}
-
-.neonShadow:hover {
-  transform: translateX(-20px) rotate(30deg);
-  border-radius: 10px;
-  background-color: rgba(93, 52, 168, 0.5);
-  transition: 0.5s;
-  color: #3d3d3d;
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
-  }
-
-  50% {
-    box-shadow: 5px 5px 20px rgb(81, 224, 210), -5px -5px 20px rgb(81, 224, 210);
-  }
-  100% {
-    box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
-  }
 }
 
 /*hr*/
