@@ -25,7 +25,108 @@ body::before {
   font-weight: bold;
   color: #222222;
 }
+
+/*cingene*/
+* {
+  box-sizing: border-box;
+}
+
+.bedava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  font-family: "Montserrat", san-serif;
+}
+
+.card2 {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  margin: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #04c273, #04a3b5);
+}
+
+.card2 img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 450px;
+  transition: 0.5s;
+}
+
+.card2:hover img {
+  left: 80%;
+  height: 500px;
+}
+
+.card2 .content {
+  position: relative;
+  width: 50%;
+  left: 30%;
+  padding: 16px 26px 26px 36px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.card2:hover .content {
+  opacity: 1;
+  visibility: visible;
+  left: 0%;
+}
+
+.card2 .content h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.75em;
+  font-family: "Oswald", sans-serif;
+}
+
+.card2 .content a {
+  text-decoration: none;
+  color:rgb(211, 211, 211);
+}
+
+.card2 .content h3 {
+  font-size: 30px;
+  line-height: 1.5em;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .card2 {
+    position: relative;
+    width: auto;
+    max-width: 600px;
+    transition: 0.5s;
+    align-items: flex-start;
+  }
+  .card2:hover {
+    height: 600px;
+  }
+  .card2:hover img {
+    left: 50%;
+    height: 350px;
+  }
+  .card2 .content {
+    width: 100%;
+    left: 0;
+    padding: 16px;
+  }
+}
+
 /*home*/
+
+.enter{
+  min-height: 100vh;
+}
+
 #home {
   font-family: "Montserrat", sans-serif;
   color: #04c273;
@@ -67,20 +168,6 @@ body::before {
   font-size: 30px;
   color: #222222;
   line-height: 40px;
-}
-
-.button1 {
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background: #04a3b5;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  cursor: pointer;
-  font-family: "Oswald", sans-serif;
 }
 
 /*waves*/
@@ -551,103 +638,6 @@ footer hr {
   color: #04a3b5;
 }
 
-.enter{
-  min-height: 100vh;
-}
-
-/*iletişim*/
-* {
-  box-sizing: border-box;
-}
-
-.bedava {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  font-family: "Montserrat", san-serif;
-}
-
-.card2 {
-  position: relative;
-  width: 1000px;
-  height: 450px;
-  margin: 16px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 24px;
-  background: linear-gradient(135deg, #04c273, #04a3b5);
-}
-
-.card2 img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 450px;
-  transition: 0.5s;
-}
-
-.card2:hover img {
-  left: 80%;
-  height: 500px;
-}
-
-.card2 .content {
-  position: relative;
-  width: 50%;
-  left: 30%;
-  padding: 16px 26px 26px 36px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.card2:hover .content {
-  opacity: 1;
-  visibility: visible;
-  left: 0%;
-}
-
-.card2 .content h1 {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 1.75em;
-  font-family: "Oswald", sans-serif;
-}
-
-.card2 .content a {
-  text-decoration: none;
-}
-
-.card2 .content p {
-  font-size: 20px;
-  line-height: 1.5em;
-  color: rgb(211, 211, 211);
-}
-
-@media (max-width: 991px) {
-  .card2 {
-    position: relative;
-    width: auto;
-    max-width: 600px;
-    transition: 0.5s;
-    align-items: flex-start;
-  }
-  .card2:hover {
-    height: 600px;
-  }
-  .card2:hover img {
-    left: 50%;
-    height: 350px;
-  }
-  .card2 .content {
-    width: 100%;
-    left: 0;
-    padding: 16px;
-  }
-}
 /*button*/
 .neonShadow {
   height: 50px;
