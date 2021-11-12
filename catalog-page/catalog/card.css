@@ -67,12 +67,13 @@ body {
 p {
   position: absolute;
   z-index: 1000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: whitesmoke;
-  font-size: 1.5rem;
-  margin-left: -149px;
-  margin-top: -93px;
-  letter-spacing: 2px;
+  font-size: 2rem;
+  /* margin-left: -149px; */
+  /* margin-top: -93px; */
+  padding-bottom: 50px;
+  letter-spacing: 1.3px;
 }
 .card1 p:nth-child(2) {
   opacity: 0.6;
