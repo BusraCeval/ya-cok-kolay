@@ -27,17 +27,13 @@ body::before {
 }
 
 /*cingene*/
-* {
-  box-sizing: border-box;
-}
-
-.bedava {
+/* .bedava {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", san-serif;
-}
-
+} */
+/* 
 .card2 {
   position: relative;
   width: 700px;
@@ -49,7 +45,6 @@ body::before {
   border-radius: 24px;
   background: linear-gradient(135deg, #04c273, #04a3b5);
 }
-
 .card2 img {
   position: absolute;
   bottom: 0;
@@ -58,12 +53,10 @@ body::before {
   height: 450px;
   transition: 0.5s;
 }
-
 .card2:hover img {
   left: 80%;
   height: 500px;
 }
-
 .card2 .content {
   position: relative;
   width: 50%;
@@ -73,31 +66,26 @@ body::before {
   visibility: hidden;
   transition: 0.5s;
 }
-
 .card2:hover .content {
   opacity: 1;
   visibility: visible;
   left: 0%;
 }
-
 .card2 .content h1 {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 1.75em;
   font-family: "Oswald", sans-serif;
 }
-
 .card2 .content a {
   text-decoration: none;
   color: rgb(211, 211, 211);
 }
-
 .card2 .content h3 {
   font-size: 30px;
   line-height: 1.5em;
   font-family: "Oswald", sans-serif;
 }
-
 @media (max-width: 991px) {
   .card2 {
     position: relative;
@@ -118,20 +106,11 @@ body::before {
     left: 0;
     padding: 16px;
   }
-}
+} */
 
 /*home*/
-#home {
-  font-family: "Montserrat", sans-serif;
-  color: #04c273;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 40px;
-}
 
-.lead {
-  font-size: 20px;
-}
+
 
 .process {
   font-size: 40px;
@@ -196,20 +175,22 @@ body::before {
 
 /* ya çok kolay paketleri */
 #package {
-  color: #04c273;
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  font-style: normal;
   min-height: 100vh;
+  font-family: "Oswald", sans-serif;
 }
 .baslık {
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   font-family: "Oswald", sans-serif;
+  line-height: 70px;
+  color: #04c273;
 }
-
-
-
+.lead {
+  font-size: 20px;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+}
 /*footer*/
 .footer {
   font-family: "Oswald", sans-serif;
