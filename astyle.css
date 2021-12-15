@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&family=Montserrat&family=Oswald&display=swap");
+* {
+  margin: 0;
+}
+html {
+  background: gainsboro;
+}
+body {
+  overflow-x: hidden;
+}
+main {
+  margin: 0 auto;
+  padding: 0.875em 0.5em;
+  max-width: 32em;
+  background: whitesmoke;
+  font: 1.25em/ 1.375;
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+  font-weight: 550;
+}
+main * + * {
+  margin-top: 1.375em;
+}
+main h1{
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0px 2px 6px rgb(105, 105, 105);
+  margin-top: 40px;
+}
+.banner {
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 37.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000), var(--img) 50% / cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+.banner:nth-of-type(1) {
+  --img: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+/*navbar*/
+#navmenu {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #222222;
+}
+
+/*footer*/
+.footer {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+
+/*footer1*/
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 12px;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.829);
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.829);
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
