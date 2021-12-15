@@ -8,8 +8,14 @@
 .nav-link {
   color: #04c273;
   font-family: "Oswald", sans-serif;
-  text-decoration-color: darkgreen;
-  font-size: 20px;
+  text-decoration-color: darkgreen; 
+}
+/*navbar*/
+#navmenu {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #222222;
 }
 
 /*card*/
